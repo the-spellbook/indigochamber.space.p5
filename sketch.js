@@ -86,11 +86,11 @@ function draw() {
     let radius = 700-boxSize;
     let camX = radius * cos(angle+90);
     let camZ = radius * sin(angle+90);
-    let camY = 500;
+    let camY = -500;
 
     camera(camX, camY, camZ, 0, 0, 0, 0, 1, 0);
 
-    angle += 0.0005;
+    angle -= 0.0005;
 
     noStroke();
     fill(255);
