@@ -80,7 +80,7 @@ function setup() {
 }
 
 function draw() {
-    background(0,0,20);
+    background(0,0,10);
     ambientLight(255);
 
     let radius = 700-boxSize;
