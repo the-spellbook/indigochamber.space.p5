@@ -31,7 +31,6 @@ p {
 h3 {
     color:rgb(255, 245, 212);
     font-family:'Courier New', Courier, monospace;
-
 }
 a:link {
     font-size: small;
@@ -66,4 +65,22 @@ a:active {
 .text {
     color:rgb(255, 245, 212);
     font-family:'Courier New', Courier, monospace;
+}
+nav a {
+    font-size: small;
+    color: rgb(255, 245, 212);
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+.section {
+    display: none;
+    width: 40%;
+    float: left;
+}
+.section.active {
+    display: block;
+}
+nav a.active::before {
+    content: '> ';
 }
